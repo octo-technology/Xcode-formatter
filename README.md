@@ -10,9 +10,11 @@ Add a simple directory in your Xcode project to provide :
 * __all sources formatting__ : format all your code with one command line
 * __shared formatting rules by project__ : edit and use a same configuration file with your project dev team
 
+
 *****
- 
- 
+
+
+
 1) How to setup the code formatter for your project
 -----------------------------------------------------
 
@@ -47,9 +49,9 @@ You can see this name in the Applications/ directory (or your custom Xcode insta
 Copy this file to your ~/Library/Services/ folder (create this folder if needed).
 
 Be careful : by double-clicking this file, you will install it but the file will be removed ! Be sure to leave a copy of it for other users.
- 
- 
- 
+
+
+
 
 2) How to format opened files when building the project
 ---------------------------------------------------------
@@ -59,9 +61,9 @@ Be careful : by double-clicking this file, you will install it but the file will
 	sh CodeFormatter/scripts/formatOpenedSources.sh
 
 ![Add build phase](https://raw.github.com/octo-online/Xcode-formatter/master/images/add_build_phase.png)
- 
- 
- 
+
+
+
 
 3) How to format opened files with a shortcut
 -----------------------------------------------
@@ -78,9 +80,9 @@ And set your shortcut :
 
 
 ### Then use your shortcut to format code!
- 
- 
- 
+
+
+
 4) How to format files in command line
 ----------------------------------------
 
@@ -94,9 +96,9 @@ And set your shortcut :
 	$ sh CodeFormatter/scripts/formatAllSources.sh PATH
 
 PATH must be replaced by your sources path.
- 
- 
- 
+
+
+
 5) How to change formatter’s rules
 ------------------------------------
 
