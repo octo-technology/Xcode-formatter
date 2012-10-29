@@ -1,7 +1,7 @@
 XCODE FORMATTER
 ================
 
-Xcode formatter use [uncrustify](http://uncrustify.sourceforge.net/) to easily format your source code as your team want it to be !
+Xcode formatter use [uncrustify](http://uncrustify.sourceforge.net/) to easily format your source code as your team want it to be!
 
 Add a simple directory in your Xcode project to provide : 
 
@@ -10,6 +10,7 @@ Add a simple directory in your Xcode project to provide :
 * __all sources formatting__ : format all your code with one command line
 * __shared formatting rules by project__ : edit and use a same configuration file with your dev team
 
+*****
 
 1) How to setup the code formatter for your project
 -----------------------------------------------------
@@ -35,22 +36,21 @@ To install brew :
 
 ### Check that your Xcode application is named "Xcode" (default name)
 
-You can see this name in the Applications/ directory (or your custom Xcode installation directory).
-
-Be carefull if you have multiple instances of Xcode on your mac, ensure as well that project's one is actually named "Xcode" !
+You can see this name in the Applications/ directory (or your custom Xcode installation directory). Be carefull if you have multiple instances of Xcode on your mac: ensure that project's one is actually named "Xcode"!
 
 (Why this ? This name is used to find currently opened Xcode files. See CodeFormatter/Uncrustify\_opened\_Xcode\_sources.workflow appleScript).
 
 
 ### Install the automator service Uncrustify\_opened\_Xcode\_sources.workflow
 
-Double-click on this file or copy it to your ~/Library/Services/ folder (create this folder if needed).
+Copy this file to your ~/Library/Services/ folder (create this folder if needed).
+Be careful : by double-clicking this file, you will install it but the file will be removed ! Be sure to leave a copy of it for other users.
 
 
 2) How to format opened files when building the project
 ---------------------------------------------------------
 
-### Add on project target a build phase "run script" containing the following line :
+### Add on project target a build phase "run script" containing the following line:
 
 	sh CodeFormatter/scripts/formatOpenedSources.sh
 
@@ -62,26 +62,28 @@ Double-click on this file or copy it to your ~/Library/Services/ folder (create 
 
 ### Add a shortcut to the Uncrustify_opened_Xcode_sources service
 
-Go to Xcode > Services > Services preferences and set your shortcut
+Go to Xcode > Services > Services preferences :
 
 ![Create service shortcut](https://raw.github.com/octo-online/Xcode-formatter/master/images/add_service_shortcut.png)
+
+And set your shortcut :
 
 ![Choose service shortcut](https://raw.github.com/octo-online/Xcode-formatter/master/images/choose_service_shortcut.png)
 
 
-### Then use your shortcut to format code !
+### Then use your shortcut to format code!
 
 
  
 4) How to format files in command line
 ----------------------------------------
 
-### To format currently opened files, use formatOpenedSources.sh : 
+### To format currently opened files, use formatOpenedSources.sh: 
 
 	$ sh CodeFormatter/scripts/formatOpenedSources.sh
 
 
-### To format all files, use formatAllSources.sh :
+### To format all files, use formatAllSources.sh:
 
 	$ sh CodeFormatter/scripts/formatAllSources.sh PATH
 

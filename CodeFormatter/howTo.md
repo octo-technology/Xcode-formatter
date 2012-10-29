@@ -9,6 +9,6 @@ Follow next steps to use CodeFormatter for Xcode :
 * Configure formatting rules with your team in the CodeFormatter/uncrustify\_objective\_c.cfg file
 
 
-# Need more infos ? Want to use shell scripts ?
+# Can't find .workflow file ? Need more infos ? Want to use shell scripts ?
 
 You will find all necessary details on github page : [https://github.com/octo-online/Xcode-formatter](https://github.com/octo-online/Xcode-formatter)
