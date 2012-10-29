@@ -79,8 +79,6 @@ And set your shortcut :
 ![Choose service shortcut](https://raw.github.com/octo-online/Xcode-formatter/master/images/choose_service_shortcut.png)
 
 
-### Then use your shortcut to format code!
-
 
 
 4) How to format files in command line
