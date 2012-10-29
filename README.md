@@ -3,9 +3,9 @@ XCODE FORMATTER
 
 Xcode formatter use [uncrustify](http://uncrustify.sourceforge.net/) to easily format your source code as your team want it to be !
 
-Add a simple directory in your Xcode project to provide Xcode : 
+Add a simple directory in your Xcode project to provide : 
 
-* __shortcut-based code formatting__ : use a shortcut to format modified sources in the current workspace
+* __Xcode shortcut-based code formatting__ : use a shortcut to format modified sources in the current workspace
 * __automatic code formatting__ : add a build phase to your project to format current sources when application builds
 * __all sources formatting__ : format all your code with one command line
 * __shared formatting rules by project__ : edit and use a same configuration file with your dev team
@@ -37,9 +37,9 @@ To install brew :
 
 You can see this name in the Applications/ directory (or your custom Xcode installation directory).
 
-Why this ? This name is used to find currently opened Xcode files (in appleScript).
+Be carefull if you have multiple instances of Xcode on your mac, ensure as well that project's one is actually named "Xcode" !
 
-If you have multiple instances of Xcode on your mac, ensure that project's one is named "Xcode". Or you can change this name in the CodeFormatter/Uncrustify\_opened\_Xcode\_sources.workflow appleScript.
+(Why this ? This name is used to find currently opened Xcode files. See CodeFormatter/Uncrustify\_opened\_Xcode\_sources.workflow appleScript).
 
 
 ### Install the automator service Uncrustify\_opened\_Xcode\_sources.workflow
@@ -66,8 +66,10 @@ Go to Xcode > Services > Services preferences and set your shortcut
 
 ![Create service shortcut](https://raw.github.com/octo-online/Xcode-formatter/master/images/add_service_shortcut.png)
 
+![Choose service shortcut](https://raw.github.com/octo-online/Xcode-formatter/master/images/choose_service_shortcut.png)
 
-### Use your shortcut to format code !
+
+### Then use your shortcut to format code !
 
 
  
