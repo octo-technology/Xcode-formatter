@@ -2,6 +2,7 @@ XCODE FORMATTER
 ================
 
 Xcode formatter use [uncrustify](http://uncrustify.sourceforge.net/) to easily format your source code as your team want it to be !
+
 Add a simple directory in your Xcode project to provide Xcode : 
 
 * __shortcut-based code formatting__ : use a shortcut to format modified sources in the current workspace
@@ -27,18 +28,18 @@ To install brew :
 	$ which uncrustify
 
 
-### Extract CodeFormatter directory and put it in same directory as .xcodeprojet file
+### Add CodeFormatter directory beside your .xcodeproj file
 
 ![CodeFormatter directory location](https://raw.github.com/octo-online/Xcode-formatter/master/images/directory_location.png)
 
 
 ### Check that your Xcode application is named "Xcode" (default name)
 
-You can see this name in the Applications directory.
+You can see this name in the Applications/ directory (or your custom Xcode installation directory).
 
-Why ? This name is used to get currently opened files with an Applescript script.
+Why this ? This name is used to find currently opened Xcode files (in appleScript).
 
-If you have multiple instances of Xcode on your mac, ensure that project's one is named "Xcode". Or you can change the name of the application in the CodeFormatter/Uncrustify\_opened\_Xcode\_sources.workflow appleScript.
+If you have multiple instances of Xcode on your mac, ensure that project's one is named "Xcode". Or you can change this name in the CodeFormatter/Uncrustify\_opened\_Xcode\_sources.workflow appleScript.
 
 
 ### Install the automator service Uncrustify\_opened\_Xcode\_sources.workflow
@@ -89,6 +90,6 @@ PATH must be replaced by your sources path.
 5) How to change formatter’s rules
 ------------------------------------
 
-### Edit CodeFormatter/uncrustify_objective_c.cfg
+### Edit CodeFormatter/uncrustify\_objective\_c.cfg
 
 You can use UniversalIndentGUI (http://universalindent.sourceforge.net/) to simplify edition.
