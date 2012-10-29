@@ -1,5 +1,17 @@
+XCODE FORMATTER
+================
+
+Xcode formatter use [uncrustify](http://uncrustify.sourceforge.net/) to easily format your source code as your team want it to be !
+Add a simple directory in your Xcode project to provide Xcode : 
+
+* __shortcut-based code formatting__ : use a shortcut to format modified sources in the current workspace
+* __automatic code formatting__ : add a build phase to your project to format current sources when application builds
+* __all sources formatting__ : format all your code with one command line
+* __shared formatting rules by project__ : edit and use a same configuration file with your dev team
+
+
 1) How to setup the code formatter for your project
-=====================================================
+-----------------------------------------------------
 
 ### Install uncrustify
 
@@ -35,7 +47,7 @@ Double-click on this file or copy it to your ~/Library/Services/ folder (create 
 
 
 2) How to format opened files when building the project
-=======================================================
+---------------------------------------------------------
 
 ### Add on project target a build phase "run script" containing the following line :
 
@@ -45,7 +57,7 @@ Double-click on this file or copy it to your ~/Library/Services/ folder (create 
 
 
 3) How to format opened files with a shortcut
-=============================================
+-----------------------------------------------
 
 ### Add a shortcut to the Uncrustify_opened_Xcode_sources service
 
@@ -59,7 +71,7 @@ Go to Xcode > Services > Services preferences and set your shortcut
 
  
 4) How to format files in command line
-======================================
+----------------------------------------
 
 ### To format currently opened files, use formatOpenedSources.sh : 
 
@@ -75,7 +87,7 @@ PATH must be replaced by your sources path.
 
  
 5) How to change formatter’s rules
-==================================
+------------------------------------
 
 ### Edit CodeFormatter/uncrustify_objective_c.cfg
 
