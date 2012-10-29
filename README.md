@@ -3,12 +3,12 @@ XCODE FORMATTER
 
 Xcode Formatter use [uncrustify](http://uncrustify.sourceforge.net/) to easily format your source code as your team want it to be!
 
-Add a simple directory in your Xcode project to provide : 
+Add a simple directory in your Xcode project to provide: 
 
-* __Xcode shortcut-based code formatting__ : use a shortcut to format modified sources in the current workspace
-* __automatic code formatting__ : add a build phase to your project to format current sources when application builds
-* __all sources formatting__ : format all your code with one command line
-* __shared formatting rules by project__ : edit and use a same configuration file with your project dev team
+* Xcode __shortcut-based code formatting__: use a shortcut to format modified sources in the current workspace
+* __automatic code formatting__: add a build phase to your project to format current sources when application builds
+* __all sources formatting__: format all your code with one command line
+* __shared formatting rules by project__: edit and use a same configuration file with your project dev team
 
 
 *****
@@ -22,7 +22,7 @@ Add a simple directory in your Xcode project to provide :
 
 	$ brew install uncrustify
 
-To install brew :
+To install brew:
  
 	$ ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
 
