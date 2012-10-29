@@ -1,6 +1,8 @@
 XCODE FORMATTER
 ================
 
+![Why a code formatter](https://raw.github.com/octo-online/Xcode-formatter/master/images/why.png)
+
 Xcode Formatter use [uncrustify](http://uncrustify.sourceforge.net/) to easily format your source code as your team want it to be!
 
 Add a simple directory in your Xcode project to provide: 
