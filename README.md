@@ -10,7 +10,7 @@ Add a simple directory in your Xcode project to provide:
 * Xcode __shortcut-based code formatting__: use a shortcut to format modified sources in the current workspace
 * __automatic code formatting__: add a build phase to your project to format current sources when application builds
 * __all sources formatting__: format all your code with one command line
-* __shared formatting rules by project__: edit and use a same configuration file with your project dev team
+* __your formatting rules shared by project__: edit and use a same configuration file with your project dev team
 
 
 *****
