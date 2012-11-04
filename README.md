@@ -3,19 +3,18 @@ XCODE FORMATTER
 
 ![Why a code formatter](https://raw.github.com/octo-online/Xcode-formatter/master/images/why.png)
 
-Xcode Formatter use [uncrustify](http://uncrustify.sourceforge.net/) to easily format your source code as your team want it to be!
+A common problem with large iOS projects is the lack of support for a shared set of formatting rules which, over the time, leads to unmaintainable source trees.
 
-Add a simple directory in your Xcode project to provide: 
+Xcode Formatter uses [uncrustify](http://uncrustify.sourceforge.net/) to easily format your source code as your team exactly wants it to be!
 
-* Xcode __shortcut-based code formatting__: use a shortcut to format modified sources in the current workspace
+Simply add the __CodeFormatter__ directory in your Xcode project to get : 
+
+* Xcode __shortcut-based code formatting__: a shortcut to format modified sources in the current workspace
 * __automatic code formatting__: add a build phase to your project to format current sources when application builds
 * __all sources formatting__: format all your code with one command line
 * __your formatting rules shared by project__: edit and use a same configuration file with your project dev team
 
-
 *****
-
-
 
 1) How to setup the code formatter for your project
 -----------------------------------------------------
