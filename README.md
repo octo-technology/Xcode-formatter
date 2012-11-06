@@ -3,7 +3,7 @@ XCODE FORMATTER
 
 ![Why a code formatter](https://raw.github.com/octo-online/Xcode-formatter/master/images/why.png)
 
-A common problem with large iOS projects is the lack of support for a shared set of formatting rules which, over the time, leads to unmaintainable source trees.
+A common problem with large iOS projects is the lack of support for a shared set of formatting rules. This leads over the time to unreadable and hard to maintain sources files.
 
 Xcode Formatter uses [uncrustify](http://uncrustify.sourceforge.net/) to easily format your source code as your team exactly wants it to be!
 
