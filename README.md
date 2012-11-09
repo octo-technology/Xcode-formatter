@@ -21,6 +21,8 @@ Simply add the __CodeFormatter__ directory in your Xcode project to get :
 
 ### Install uncrustify
 
+The simpliest way is to use [brew](http://mxcl.github.com/homebrew/):
+
 	$ brew install uncrustify
 
 To install brew:
@@ -49,7 +51,7 @@ You can see this name in the Applications/ directory (or your custom Xcode insta
 
 Copy this file to your ~/Library/Services/ folder (create this folder if needed).
 
-Be careful : by double-clicking this file, you will install it but the file will be removed ! Be sure to leave a copy of it for other users.
+Be careful : by double-clicking the .workflow file, you will install it but the file will be removed! Be sure to leave a copy of it for other users.
 
 
 
