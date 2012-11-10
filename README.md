@@ -120,9 +120,9 @@ Uncrustify (version 0.59) does not handle apple new literals for creating NSDict
 	 							 @1 : @"green",
 	 							 @2 : @"blue"};
 
-Until a new version of uncrustify fix this issue, you can use the old way with those literals:
+Until a new version of uncrustify fixes this issue, you can use the old way with those literals:
 
-	NSDictionary *dictionary2 = [NSDictionary dictionaryWithObjectsAndKeys:@"red", @1, 
+	NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"red", @1, 
 	                                                                       @"green", @2, 
 	                                                                       @"blue", @3, 
 	                                                                       nil];
