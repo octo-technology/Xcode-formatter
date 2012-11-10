@@ -106,3 +106,24 @@ PATH must be replaced by your sources path.
 ### Edit CodeFormatter/uncrustify\_objective\_c.cfg
 
 You can use UniversalIndentGUI (http://universalindent.sourceforge.net/) to simplify edition.
+
+
+
+6) FAQ
+--------
+
+### When formatting the current sources, an unknown error occurs and shows my code. What can I do ? 
+
+Uncrustify (version 0.59) does not handle apple new literals for creating NSDictionary and NSArray like : 
+
+	NSDictionary *dictionary = @{@0 : @"red",
+	 							 @1 : @"green",
+	 							 @2 : @"blue"};
+
+Until a new version of uncrustify fix this issue, you can use the old way with those literals :
+
+	NSDictionary *dictionary2 = [NSDictionary dictionaryWithObjectsAndKeys:@"red", @1, 
+	                                                                       @"green", @2, 
+	                                                                       @"blue", @3, 
+	                                                                       nil];
+
