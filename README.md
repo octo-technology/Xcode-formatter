@@ -127,3 +127,6 @@ Until a new version of uncrustify fixes this issue, you can use the old way with
 	                                                                       @"blue", @3, 
 	                                                                       nil];
 
+### I want to have a single configuration file for all my Xcode projects, is it possible?
+
+Yes, everything is possible. Just move your configuration file to your home directory: '~/.uncrustify//uncrustify\_objective\_c.cfg'. If the configuration file is not found in project directory, this global file is used.
