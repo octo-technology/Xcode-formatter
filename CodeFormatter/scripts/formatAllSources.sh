@@ -21,16 +21,8 @@ if [ -n "$1" ]
 	
 	# format files :
 	echo ""
-	echo "==> Format files"
-	
-	pathToConfigurationFile=$(dirname "../uncrustify_objective_c.cfg")
-	if [ ! -f $pathToConfigurationFile ]
-	then
-		echo "Will try the global configuration file"
-	    $pathToConfigurationFile=$(dirname "~/.uncrustify/uncrustify_objective_c.cfg")
-	fi
-	
-	/usr/local/bin/uncrustify -F temp/sources_to_uncrustify.txt -c $pathToConfigurationFile --no-backup 
+	echo "==> Format files"	
+	/usr/local/bin/uncrustify -F temp/sources_to_uncrustify.txt -c "../uncrustify_objective_c.cfg" --no-backup 
 	
 	# remove temp files : 
 	rm -rf temp/
