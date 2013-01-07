@@ -21,7 +21,7 @@ Simply add the __CodeFormatter__ directory in your Xcode project to get :
 
 ### Install uncrustify
 
-The simpliest way is to use [brew](http://mxcl.github.com/homebrew/):
+The simplest way is to use [brew](http://mxcl.github.com/homebrew/):
 
 	$ brew install uncrustify
 
