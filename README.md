@@ -34,6 +34,8 @@ To install brew:
 
 	$ which uncrustify
 
+If your uncrustify version is lower than 0.60, you might have to install it manually since modern Objective-C syntax has been aded recently, see this post :
+http://stackoverflow.com/questions/11862964/uncrustify-doesnt-support-for-the-new-objective-c-syntax-of-llvm-4-0/14202765#14202765
 
 ### Add CodeFormatter directory beside your .xcodeproj file
 
