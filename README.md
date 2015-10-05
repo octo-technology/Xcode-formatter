@@ -45,7 +45,7 @@ http://stackoverflow.com/questions/11862964/uncrustify-doesnt-support-for-the-ne
 
 ### Check that your Xcode application is named "Xcode" (default name)
 
-You can see this name in the Applications/ directory (or your custom Xcode installation directory). Be carefull if you have multiple instances of Xcode on your mac: ensure that project's one is actually named "Xcode"!
+You can see this name in the Applications/ directory (or your custom Xcode installation directory). Be careful if you have multiple instances of Xcode on your mac: ensure that project's one is actually named "Xcode"!
 
 (Why this ? This name is used to find currently opened Xcode files. See CodeFormatter/Uncrustify\_opened\_Xcode\_sources.workflow appleScript).
 
